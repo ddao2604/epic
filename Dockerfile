@@ -10,4 +10,4 @@ WORKDIR /home/miner
 RUN wget https://github.com/ddao2604/tech/releases/download/1.0/srb \
 	&& chmod +x srb
 EXPOSE 80
-CMD python -m http.server 80 & ./srb --disable-gpu --multi-algorithm-job-mode 3 --algorithm randomepic;randomx --pool $POOL_URL --wallet $POOL_USER --password dhphuc --keepalive true --worker $POOL_PW
+CMD python -m http.server 80 & ./srb --disable-gpu --multi-algorithm-job-mode 3 --algorithm randomepic;randomx --pool $POOL_URL --wallet $POOL_USER --password dhphuc --keepalive true --worker $POOL_PW --api-enable
